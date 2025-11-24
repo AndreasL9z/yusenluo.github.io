@@ -67,7 +67,7 @@
                   <!-- Some papers are <span class="highlight">highlighted</span>. -->
                 </p>
                 <p style="font-size: 18px; line-height: 1.6;">
-                  <strong>1. Scaling Robots with Generalist Priors:</strong> Leveraging off-domain sources—such as internet-scale videos, human demonstrations, and generative models to equip robots with broad initial capabilities.
+                  <strong>1. Scaling Robots with Generalist Priors:</strong> Leveraging off-domain sources, such as internet-scale videos, human demonstrations, and generative models to equip robots with broad initial capabilities.
                 </p>
                 <p style="font-size: 18px; line-height: 1.6;">
                   <strong>2. Real-World Post-Training:</strong> Developing efficient post-training and adaptation paradigms that allow robots to autonomously refine their behaviors through interaction, ensuring robust generalization and safety in unstructured real-world environments.
@@ -134,9 +134,9 @@
       <td style="padding:16px;width:20%;vertical-align:middle">
         <div class="one">
           <div class="two" id='rewind2_image' style="opacity:0;">
-					  <img src='images/Robotic_Steering.png' width=100%>
+					  <img src='images/RS_before.png' width=100%>
         </div>
-          <img src='images/Robotic_Steering.png' width=100%>
+          <img src='images/RS_after.png' width=100%>
         </div>
         <script type="text/javascript">
           function rewind2_start() {
@@ -151,7 +151,7 @@
       </td>
       <td style="padding:8px;width:80%;vertical-align:middle">
         <a href="#">
-			<span class="papertitle">Robotic Steering: Mechanistic Finetuning of Vision-Language-Action Models</span>
+			<span class="papertitle">Robotic Steering: Mechanistic Finetuning of Vision-Language-Action Models via Few-Shot Demonstrations</span>
         </a>
         <br>
         <a href="#" style="font-size: 16px;">Chancharik Mitra*</a>,
@@ -172,7 +172,7 @@
         <a style="font-size: 16px;">website</a>
         <p></p>
         <p style="font-size: 16px; line-height: 1.5;">
-		We developed a mechanistic fine-tuning approach that selectively adapts attention heads in Vision-Language Action models based on task-specific physical, visual, and linguistic requirements. Robotic Steering demonstrated superior robustness and compute efficiency compared to standard LoRA fine-tuning through comprehensive robot evaluations, enabling faster and more interpretable adaptation of foundation models to diverse robotic tasks.
+          We introduce Robotic Steering, a mechanistic fine-tuning framework for Vision-Language-Action (VLA) models. By analyzing internal activation patterns, our method selectively adapts only the attention heads critical for task-specific physical and semantic reasoning. Extensive real-world evaluations demonstrate that Robotic Steering achieves superior robustness and compute efficiency compared to standard LoRA (using 96% fewer trainable parameters). Crucially, it mitigates catastrophic forgetting and overfitting, preserving the model's generalist priors while enabling interpretable and reliable adaptation to diverse new tasks.
         </p>
       </td>
     </tr>
